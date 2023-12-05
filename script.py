@@ -12,14 +12,16 @@ if __name__ == "__main__":
     xml_loader = XmlFileLoader('data/a/b/users_1.xml')
     xml_file = xml_loader.load_cleaned_file()
 
+    xml_loader_2 = XmlFileLoader('data/users_2.xml')
+    xml_file_2 = xml_loader.load_cleaned_file()
+
     csv_loader = CsvFileLoader('data/a/b/users_1.csv')
     csv_file = csv_loader.load_cleaned_file()
 
     csv_loader_2 = CsvFileLoader('data/a/c/users_2.csv')
     csv_file_2 = csv_loader_2.load_cleaned_file()
 
-    files_list = [json_file, xml_file, csv_file, csv_file_2]
-
+    files_list = [json_file, xml_file, xml_file_2, csv_file, csv_file_2]
     data_processor = DataProcessor()
     users = data_processor.merge_data_from_list(files_list)
     data_processor.clear_users_data(users)
