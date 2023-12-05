@@ -1,7 +1,7 @@
 # Recruitment Task Oliwier Kossak
 ##  Examples of how to use script
 ### Print The Number of All Valid Accounts
-**Command:** python script.py print-all-accounts
+**Command:** python script.py print-all-accounts \n
 **Screenshot of using the command:**
 
 ![untitled(2)](https://github.com/OliwierKossak/recruitment_task/assets/138603416/0a641b17-7fdf-447a-98a3-cc77f23dc2de)
